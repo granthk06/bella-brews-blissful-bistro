@@ -1,13 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from 'react';
+import { Hero } from '@/components/Hero';
+import { About } from '@/components/About';
+import { Menu } from '@/components/Menu';
+import { Reviews } from '@/components/Reviews';
+import { Reservation } from '@/components/Reservation';
+import { Cart } from '@/components/Cart';
+import { CartProvider } from '@/components/CartContext';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <CartProvider>
+      <div className="min-h-screen bg-amber-50">
+        <Hero />
+        <About />
+        <Menu />
+        <Reviews />
+        <Reservation />
+        <Cart />
       </div>
-    </div>
+    </CartProvider>
   );
 };
 
