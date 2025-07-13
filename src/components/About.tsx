@@ -1,5 +1,4 @@
-
-import { Award, Heart, Users } from 'lucide-react';
+import { Award, Heart, Users, Coffee } from 'lucide-react';
 
 export const About = () => {
   return (
