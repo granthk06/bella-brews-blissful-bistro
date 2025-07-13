@@ -1,3 +1,4 @@
+
 import { Award, Heart, Users, Coffee } from 'lucide-react';
 
 export const About = () => {
@@ -25,7 +26,7 @@ export const About = () => {
             </h2>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              At Bella Brew's, we believe that great coffee is more than just a beverage—it's a moment of connection, creativity, and comfort. Founded in 2018 by coffee enthusiasts Maria and Carlos, our cafe has become a beloved gathering place in the heart of the city.
+              At Bella Brew's, we believe that great coffee is more than just a beverage—it's a moment of connection, creativity, and comfort. Founded in 2018 by coffee enthusiasts Maria and Carlos, our cafe has become a beloved gathering place in the heart of Viman Nagar, Pune.
             </p>
             
             <p className="text-lg text-gray-600 leading-relaxed">
