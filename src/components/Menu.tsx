@@ -11,28 +11,28 @@ const menuData = {
     {
       id: 'espresso',
       name: 'Classic Espresso',
-      price: 3.50,
+      price: 150,
       description: 'Rich, bold shot of our signature blend',
       image: 'https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       id: 'cappuccino',
       name: 'Cappuccino',
-      price: 4.75,
+      price: 200,
       description: 'Perfect balance of espresso, steamed milk, and foam',
       image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       id: 'latte',
       name: 'Vanilla Latte',
-      price: 5.25,
+      price: 220,
       description: 'Smooth espresso with vanilla and steamed milk',
       image: 'https://images.unsplash.com/photo-1561882468-9110e03e0f78?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       id: 'cold-brew',
       name: 'Cold Brew',
-      price: 4.25,
+      price: 180,
       description: 'Smooth, less acidic coffee brewed cold for 12 hours',
       image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     }
@@ -41,46 +41,60 @@ const menuData = {
     {
       id: 'croissant',
       name: 'Butter Croissant',
-      price: 3.25,
+      price: 120,
       description: 'Flaky, buttery pastry baked fresh daily',
       image: 'https://images.unsplash.com/photo-1555507036-ab794f4fe65f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       id: 'muffin',
       name: 'Blueberry Muffin',
-      price: 4.50,
-      description: 'Moist muffin packed with fresh blueberries',
+      price: 100,
+      description: 'Fresh blueberries in a tender, moist muffin',
       image: 'https://images.unsplash.com/photo-1607958996333-41aef7caefaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       id: 'danish',
-      name: 'Almond Danish',
-      price: 4.75,
-      description: 'Sweet pastry with almond filling and glaze',
+      name: 'Cheese Danish',
+      price: 140,
+      description: 'Sweet pastry filled with creamy cheese',
       image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 'scone',
+      name: 'Cranberry Scone',
+      price: 110,
+      description: 'Traditional British scone with dried cranberries',
+      image: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     }
   ],
   sandwiches: [
     {
       id: 'avocado-toast',
       name: 'Avocado Toast',
-      price: 8.75,
-      description: 'Smashed avocado on sourdough with tomato and feta',
+      price: 280,
+      description: 'Smashed avocado on artisan bread with lime and sea salt',
       image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       id: 'grilled-cheese',
       name: 'Grilled Cheese',
-      price: 7.25,
-      description: 'Three cheese blend on artisan bread',
-      image: 'https://images.unsplash.com/photo-1528736235302-52922df5c122?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      price: 250,
+      description: 'Classic comfort food with melted cheese on toasted bread',
+      image: 'https://images.unsplash.com/photo-1528736023818-f8f8479def19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
-      id: 'turkey-club',
-      name: 'Turkey Club',
-      price: 11.50,
-      description: 'Roasted turkey, bacon, lettuce, tomato on sourdough',
-      image: 'https://images.unsplash.com/photo-1553909489-cd47e0ef937f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      id: 'club-sandwich',
+      name: 'Club Sandwich',
+      price: 350,
+      description: 'Triple-decker with turkey, bacon, lettuce, and tomato',
+      image: 'https://images.unsplash.com/photo-1567234669013-d532530b4670?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 'panini',
+      name: 'Italian Panini',
+      price: 320,
+      description: 'Pressed sandwich with mozzarella, tomato, and basil',
+      image: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     }
   ]
 };
@@ -164,7 +178,7 @@ export const Menu = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="absolute top-4 right-4 bg-white rounded-full px-3 py-1 shadow-md">
-                  <span className="font-bold text-amber-600">₹{item.price.toFixed(2)}</span>
+                  <span className="font-bold text-amber-600">₹{item.price}</span>
                 </div>
               </div>
               <CardContent className="p-6">
