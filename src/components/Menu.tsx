@@ -164,7 +164,7 @@ export const Menu = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="absolute top-4 right-4 bg-white rounded-full px-3 py-1 shadow-md">
-                  <span className="font-bold text-amber-600">${item.price.toFixed(2)}</span>
+                  <span className="font-bold text-amber-600">₹{item.price.toFixed(2)}</span>
                 </div>
               </div>
               <CardContent className="p-6">
