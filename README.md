@@ -1,73 +1,128 @@
-# Welcome to your Lovable project
+# Bella Brew's Blissful Bistro
 
-## Project info
+A premium coffee shop and bistro website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/d32566f4-4f16-4934-a334-37951d3e1a48
+## Features
 
-## How can I edit this code?
+- **Responsive Design**: Beautiful, mobile-first design that works on all devices
+- **Interactive Menu**: Browse our coffee, pastries, and sandwiches with an integrated shopping cart
+- **Online Reservations**: Easy table booking system for dine-in experiences
+- **Customer Reviews**: Showcase of customer testimonials and ratings
+- **Modern UI**: Clean, professional interface with smooth animations
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom animations
+- **UI Components**: Radix UI primitives with shadcn/ui
+- **Build Tool**: Vite
+- **Icons**: Lucide React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d32566f4-4f16-4934-a334-37951d3e1a48) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (version 16 or higher)
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd bella-brews-blissful-bistro
+```
 
-Follow these steps:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and visit `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start the development server
+- `npm run build` - Build the project for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint to check for code issues
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components (buttons, cards, etc.)
+│   ├── About.tsx       # About section component
+│   ├── Cart.tsx        # Shopping cart component
+│   ├── CartContext.tsx # Cart state management
+│   ├── Footer.tsx      # Footer component
+│   ├── Hero.tsx        # Hero section component
+│   ├── Menu.tsx        # Menu display component
+│   ├── Reservation.tsx # Reservation form component
+│   └── Reviews.tsx     # Customer reviews component
+├── pages/              # Page components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── index.css          # Global styles and Tailwind imports
+```
 
-This project is built with:
+## Customization
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Colors and Theming
 
-## How can I deploy this project?
+The project uses a custom color palette defined in `src/index.css`. You can modify the CSS custom properties to change the theme:
 
-Simply open [Lovable](https://lovable.dev/projects/d32566f4-4f16-4934-a334-37951d3e1a48) and click on Share -> Publish.
+```css
+:root {
+  --primary: /* Your primary color */;
+  --secondary: /* Your secondary color */;
+  /* ... other color variables */
+}
+```
 
-## Can I connect a custom domain to my Lovable project?
+### Menu Items
 
-Yes, you can!
+Menu items are defined in `src/components/Menu.tsx`. Update the `menuData` object to add, remove, or modify menu items.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Contact Information
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Update contact details in `src/components/Footer.tsx` and `src/components/Reservation.tsx`.
+
+## Deployment
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory, ready for deployment to any static hosting service.
+
+### Deployment Options
+
+- **Netlify**: Connect your repository for automatic deployments
+- **Vercel**: Deploy with zero configuration
+- **GitHub Pages**: Host directly from your GitHub repository
+- **Any static hosting service**: Upload the `dist` folder contents
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For questions or support, please contact us at hello@bellabrews.com
